@@ -83,6 +83,11 @@ body {
   font-weight: 500;
 }
 
+.data>* {
+  background-color: var(--bg-card);
+  border-radius: .8rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
