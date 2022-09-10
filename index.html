@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Time tracking dashboard</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -115,25 +116,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </footer>
-
-  <script>
-    fetch("data.json")
-      .then(res => res.json())
-      .then(data => appendData(data))
-
-    function appendData(data) {
-      let cardContainer = document.getElementById("card__container");
-      for (let i = 0; i < data.length; i++) {
-        const element = data[i];
-        console.log(element);
-        let div = document.createElement("div");
-        div.innerHTML = `
-          <p>${element.title}</p>
-        `;
-        cardContainer.appendChild(div);
-      }
-    }
-  </script>
 </body>
 
 </html>
