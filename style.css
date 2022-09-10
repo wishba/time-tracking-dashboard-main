@@ -2,7 +2,7 @@
 /* Font size: 18px (card titles e.g. Work, Play) */
 
 :root {
-  --blue: hsl(246, 80%, 60%);
+  --bg-report: hsl(246, 80%, 60%);
 
   --light-red-work: hsl(15, 100%, 70%);
   --soft-blue-play: hsl(195, 74%, 62%);
@@ -13,7 +13,7 @@
 
   --bg-body: hsl(226, 43%, 10%);
   --bg-card: hsl(235, 46%, 20%);
-  --bg-report: hsl(235, 45%, 61%);
+  --no-bg-report: hsl(235, 45%, 61%);
   --txt-main: hsl(236, 100%, 87%);
 }
 
@@ -37,16 +37,39 @@ body {
 
 .report {
   background-color: var(--bg-card);
+  margin: 5rem 1.5rem 0;
 }
 
 .report__for {
   background-color: var(--bg-report);
   display: flex;
+  padding: 1.5rem;
+  position: relative;
+  border-radius: .8rem;
 }
 
 .report__img {
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
+  border: .15rem solid white;
+  border-radius: 50%;
+}
+
+.report__desc {
+  position: absolute;
+  top: 50%;
+  left: 6.5rem;
+  transform: translateY(-50%);
+}
+
+.report__desc>* {
+  margin: 0;
+}
+
+.report__name {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: white;
 }
 
 .attribution {
