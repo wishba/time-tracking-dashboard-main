@@ -9,8 +9,8 @@ function appendData(data) {
     console.log(element);
     let div = document.createElement("div");
     div.innerHTML = `
-          <p>${element.title}</p>
-        `;
+      <p>${element.title}</p>
+    `;
     cardContainer.appendChild(div);
   }
 }
