@@ -12,14 +12,18 @@
 <body>
 
   <main>
-    <p>Report for</p>
-    <h1>Jeremy Robson</h1>
+    <section>
+      <p>Report for</p>
+      <h1>Jeremy Robson</h1>
 
-    <p>
-      <span>Daily</span>
-      <span>Weekly</span>
-      <span>Monthly</span>
-    </p>
+      <p>
+        <span>Daily</span>
+        <span>Weekly</span>
+        <span>Monthly</span>
+      </p>
+    </section>
+
+    <section id="card__container"></section>
   </main>
 
   Work
@@ -111,6 +115,25 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </footer>
+
+  <script>
+    fetch("data.json")
+      .then(res => res.json())
+      .then(data => appendData(data))
+
+    function appendData(data) {
+      let cardContainer = document.getElementById("card__container");
+      for (let i = 0; i < data.length; i++) {
+        const element = data[i];
+        console.log(element);
+        let div = document.createElement("div");
+        div.innerHTML = `
+          <p>${element.title}</p>
+        `;
+        cardContainer.appendChild(div);
+      }
+    }
+  </script>
 </body>
 
 </html>
