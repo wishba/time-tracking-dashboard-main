@@ -36,6 +36,10 @@ body {
   color: white;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .report,
 div {
   border-radius: .8rem;
