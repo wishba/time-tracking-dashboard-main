@@ -1,19 +1,16 @@
 fetch("data.json")
   .then(res => res.json())
-  .then(data => appendData(data))
+  .then(object => appendData(object))
 
-function appendData(data) {
-  let cardContainer = document.getElementById("card__container");
-  for (let i = 0; i < data.length; i++) {
-    const element = data[i];
-    // console.log(element.timeframes.daily);
-    // console.log(element.timeframes.daily.current);
+function appendData(object) {
+  for (const iterator of object) {
+    let cardContainer = document.getElementById("card__container");
     let div = document.createElement("div");
     div.innerHTML = `
-      <p>${element.title}</p>
-      <p>${element.timeframes.daily.current}hrs</p>
-      <p>Yesterday - ${element.timeframes.daily.previous}hrs</p>
-    `;
+      <p>${iterator.title}</p>
+      <p>${iterator.timeframes.daily.current}hrs</p>
+      <p>Yesterday - ${iterator.timeframes.daily.previous}hrs</p>
+      `;
     cardContainer.appendChild(div);
   }
 }
