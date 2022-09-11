@@ -76,11 +76,17 @@ body {
   color: white;
 }
 
-.report__week {
+.report__time {
   display: flex;
   justify-content: space-around;
+}
+
+.report__time>* {
+  background-color: transparent;
+  border: none;
   color: var(--txt-report);
-  font-weight: 500;
+  font-size: 1.25rem;
+  padding: 1.5rem;
 }
 
 .data>* {
