@@ -21,7 +21,7 @@ function appendData(object) {
     div.innerHTML = `
       <div>
         <p>${iterator.title}</p>
-        <p>${iterator.timeframes.weekly.current}hrs</p>
+        <p class="hrsCurrent">${iterator.timeframes.weekly.current}hrs</p>
         <p>Last Week - ${iterator.timeframes.weekly.previous}hrs</p>
       </div>
     `;
@@ -32,7 +32,7 @@ function appendData(object) {
       div.innerHTML = `
         <div>
           <p>${iterator.title}</p>
-          <p>${iterator.timeframes.daily.current}hrs</p>
+          <p class="hrsCurrent">${iterator.timeframes.daily.current}hrs</p>
           <p>Yesterday - ${iterator.timeframes.daily.previous}hrs</p>
         </div>
       `;
@@ -44,7 +44,7 @@ function appendData(object) {
       div.innerHTML = `
         <div>
           <p>${iterator.title}</p>
-          <p>${iterator.timeframes.weekly.current}hrs</p>
+          <p class="hrsCurrent">${iterator.timeframes.weekly.current}hrs</p>
           <p>Last Week - ${iterator.timeframes.weekly.previous}hrs</p>
         </div>
       `;
@@ -56,7 +56,7 @@ function appendData(object) {
       div.innerHTML = `
         <div>
           <p>${iterator.title}</p>
-          <p>${iterator.timeframes.monthly.current}hrs</p>
+          <p class="hrsCurrent">${iterator.timeframes.monthly.current}hrs</p>
           <p>Last Month - ${iterator.timeframes.monthly.previous}hrs</p>
         </div>
       `;

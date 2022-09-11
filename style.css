@@ -150,6 +150,10 @@ div {
   background-color: var(--bg-care);
 }
 
+.hrsCurrent {
+  font-size: 1.5rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
