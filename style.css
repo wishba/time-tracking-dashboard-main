@@ -111,10 +111,24 @@ body {
   background-image: url(images/icon-work.svg);
 }
 
-.Work>* {
-  /* background-color: red; */
-  /* width: fit-content; */
-  /* margin-top: 1rem; */
+.Play {
+  background-image: url(images/icon-play.svg);
+}
+
+.Study {
+  background-image: url(images/icon-study.svg);
+}
+
+.Exercise {
+  background-image: url(images/icon-exercise.svg);
+}
+
+.Social {
+  background-image: url(images/icon-social.svg);
+}
+
+.Self.Care {
+  background-image: url(images/icon-self-care.svg);
 }
 
 .attribution {
