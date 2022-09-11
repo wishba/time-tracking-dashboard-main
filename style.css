@@ -124,6 +124,11 @@ div {
   padding: 1.5rem;
 }
 
+.report__data>*>*>*:hover {
+  /* background-color: red; */
+  opacity: 0.95;
+}
+
 .report__data>*>*>*>button {
   background: none;
   border: none;
