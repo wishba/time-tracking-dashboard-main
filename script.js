@@ -12,13 +12,22 @@ let monthButton = document.getElementById("showMonthly");
 function dayHover() {
   dayButton.style.color = activeColor;
 }
+function dayHoverOut() {
+  dayButton.style.color = normalColor;
+}
 
 function weekHover() {
   weekButton.style.color = activeColor;
 }
+function weekHoverOut() {
+  weekButton.style.color = normalColor;
+}
 
 function monthHover() {
   monthButton.style.color = activeColor;
+}
+function monthHoverOut() {
+  monthButton.style.color = normalColor;
 }
 
 function appendData(object) {
@@ -26,13 +35,16 @@ function appendData(object) {
   for (const iterator of object) {
     let cardContainer = document.getElementById("report__card");
     let div = document.createElement("div");
+    div.className = `report-${iterator.title}`;
 
     // console.log(iterator);
 
     div.innerHTML = `
-      <p>${iterator.title}</p>
-      <p>${iterator.timeframes.weekly.current}hrs</p>
-      <p>Yesterday - ${iterator.timeframes.weekly.previous}hrs</p>
+      <div>
+        <p>${iterator.title}</p>
+        <p>${iterator.timeframes.weekly.current}hrs</p>
+        <p>Yesterday - ${iterator.timeframes.weekly.previous}hrs</p>
+      </div>
     `;
 
     document.getElementById("showDaily").addEventListener("click", daily);
@@ -42,9 +54,11 @@ function appendData(object) {
       monthButton.style.color = normalColor;
 
       div.innerHTML = `
-        <p>${iterator.title}</p>
-        <p>${iterator.timeframes.daily.current}hrs</p>
-        <p>Yesterday - ${iterator.timeframes.daily.previous}hrs</p>
+        <div>
+          <p>${iterator.title}</p>
+          <p>${iterator.timeframes.daily.current}hrs</p>
+          <p>Yesterday - ${iterator.timeframes.daily.previous}hrs</p>
+        </div>
       `;
     }
 
@@ -55,9 +69,11 @@ function appendData(object) {
       monthButton.style.color = normalColor;
 
       div.innerHTML = `
-        <p>${iterator.title}</p>
-        <p>${iterator.timeframes.weekly.current}hrs</p>
-        <p>Last Week - ${iterator.timeframes.weekly.previous}hrs</p>
+        <div>
+          <p>${iterator.title}</p>
+          <p>${iterator.timeframes.weekly.current}hrs</p>
+          <p>Last Week - ${iterator.timeframes.weekly.previous}hrs</p>
+        </div>
       `;
     }
 
@@ -68,9 +84,11 @@ function appendData(object) {
       monthButton.style.color = activeColor;
 
       div.innerHTML = `
-        <p>${iterator.title}</p>
-        <p>${iterator.timeframes.monthly.current}hrs</p>
-        <p>Last Month - ${iterator.timeframes.monthly.previous}hrs</p>
+        <div>
+          <p>${iterator.title}</p>
+          <p>${iterator.timeframes.monthly.current}hrs</p>
+          <p>Last Month - ${iterator.timeframes.monthly.previous}hrs</p>
+        </div>
       `;
     }
 
