@@ -106,12 +106,16 @@ div .Work {
   background-color: blue;
   /* width: fit-content; */
   /* margin-top: 1rem; */
-  padding-top: 1rem;
+  padding-top: 2rem;
+  background-image: url(images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position: top -1rem right 1rem;
+  background-size: 5rem;
 }
 
 .Work>* {
   background-color: red;
-  width: fit-content;
+  /* width: fit-content; */
   /* margin-top: 1rem; */
 }
 
