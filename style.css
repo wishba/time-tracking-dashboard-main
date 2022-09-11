@@ -105,10 +105,12 @@ div {
   background-repeat: no-repeat;
   background-position: top -1rem right 1rem;
   background-size: 5rem;
+  margin-bottom: 1.5rem;
 }
 
 .report__data>*>*>* {
   background-color: var(--bg-card);
+  padding: 1.5rem;
 }
 
 .Work {
