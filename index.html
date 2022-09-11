@@ -23,15 +23,9 @@
       </div>
 
       <div class="report__time">
-        <button id="showDaily">Daily</button>
-        <!-- <button onmouseover="dayHover()" onmouseout="dayHoverOut()" id="showDaily"
-          class="report__time-day">Daily</button> -->
-        <button id="showWeekly">Weekly</button>
-        <!-- <button onmouseover="weekHover()" onmouseout="weekHoverOut()" id="showWeekly"
-          class="report__time-week">Weekly</button> -->
-        <button id="showMonthly">Monthly</button>
-        <!-- <button onmouseover="monthHover()" onmouseout="monthHoverOut()" id="showMonthly"
-          class="report__time-month">Monthly</button> -->
+        <button onclick="clickDay()" onmouseover="onDay()" onmouseout="outDay()" id="showDaily">Daily</button>
+        <button onclick="clickWeek()" onmouseover="onWeek()" onmouseout="outWeek()" id="showWeekly">Weekly</button>
+        <button onclick="clickMonth()" onmouseover="onMonth()" onmouseout="outMonth()" id="showMonthly">Monthly</button>
       </div>
     </section>
 

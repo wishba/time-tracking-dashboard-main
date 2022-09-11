@@ -17,6 +17,10 @@
   --txt-main: hsl(236, 100%, 87%);
 }
 
+/* button#showDaily.active {
+  color: #6f76c8;
+} */
+
 html {
   box-sizing: border-box;
 }
@@ -87,6 +91,10 @@ body {
   color: var(--txt-report);
   font-size: 1.25rem;
   padding: 1.5rem;
+}
+
+#showWeekly {
+  color: var(--txt-main);
 }
 
 .data>* {
