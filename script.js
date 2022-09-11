@@ -13,14 +13,15 @@ let reportCard = document.getElementById("report__card");
 
 function appendData(object) {
   for (const iterator of object) {
+    let button = document.createElement("button");
     let div = document.createElement("div");
     let reportCard = document.getElementById("report__card");
     div.className = `${iterator.title}`;
 
     reportCard.className = "data-weekly";
+    button.innerHTML = `<img src="images/icon-ellipsis.svg" alt="more" />`;
     div.innerHTML = `
       <div>
-        <button><img src="images/icon-ellipsis.svg" alt="more" /></button>
         <p>${iterator.title}</p>
         <p class="hrs__current">${iterator.timeframes.weekly.current}hrs</p>
         <p class="hrs__previous">Last Week - ${iterator.timeframes.weekly.previous}hrs</p>
@@ -32,7 +33,6 @@ function appendData(object) {
       reportCard.className = "data-daily";
       div.innerHTML = `
         <div>
-          <button><img src="images/icon-ellipsis.svg" alt="more" /></button>
           <p>${iterator.title}</p>
           <p class="hrs__current">${iterator.timeframes.daily.current}hrs</p>
           <p class="hrs__previous">Yesterday - ${iterator.timeframes.daily.previous}hrs</p>
@@ -45,7 +45,6 @@ function appendData(object) {
       reportCard.className = "data-weekly";
       div.innerHTML = `
         <div>
-          <button><img src="images/icon-ellipsis.svg" alt="more" /></button>
           <p>${iterator.title}</p>
           <p class="hrs__current">${iterator.timeframes.weekly.current}hrs</p>
           <p class="hrs__previous">Last Week - ${iterator.timeframes.weekly.previous}hrs</p>
@@ -58,7 +57,6 @@ function appendData(object) {
       reportCard.className = "data-monthly";
       div.innerHTML = `
         <div>
-          <button><img src="images/icon-ellipsis.svg" alt="more" /></button>
           <p>${iterator.title}</p>
           <p class="hrs__current">${iterator.timeframes.monthly.current}hrs</p>
           <p class="hrs__previous">Last Month - ${iterator.timeframes.monthly.previous}hrs</p>
@@ -66,6 +64,7 @@ function appendData(object) {
       `;
     }
 
+    document.getElementById("report__card").appendChild(button);
     document.getElementById("report__card").appendChild(div);
   }
 }
