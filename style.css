@@ -46,7 +46,7 @@ div {
   margin: 5rem 1.5rem 1rem;
 }
 
-.report__for {
+.report__head {
   background-color: var(--bg-report);
   display: flex;
   padding: 1.5rem;
@@ -65,10 +65,15 @@ div {
   top: 50%;
   left: 6.5rem;
   transform: translateY(-50%);
+  /* color: var(--txt-main); */
 }
 
 .report__desc>* {
   margin: 0;
+}
+
+.report__for {
+  color: var(--txt-main);
 }
 
 .report__name {
@@ -91,7 +96,8 @@ div {
 }
 
 #showWeekly {
-  color: var(--txt-main);
+  /* color: var(--txt-main); */
+  color: white;
 }
 
 .report__data {

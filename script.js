@@ -68,16 +68,16 @@ function appendData(object) {
 
 
 function clickDay() {
-  dayButton.style.color = activeColor;
+  dayButton.style.color = "white";
   weekButton.style.color = normalColor;
   monthButton.style.color = normalColor;
 }
 function onDay() {
-  dayButton.style.color = activeColor;
+  dayButton.style.color = "white";
 }
 function outDay() {
   if (reportCard.className == "data-daily") {
-    dayButton.style.color = activeColor;
+    dayButton.style.color = "white";
   }
   if (reportCard.className == "data-weekly") {
     dayButton.style.color = normalColor;
@@ -89,18 +89,18 @@ function outDay() {
 
 function clickWeek() {
   dayButton.style.color = normalColor;
-  weekButton.style.color = activeColor;
+  weekButton.style.color = "white";
   monthButton.style.color = normalColor;
 }
 function onWeek() {
-  weekButton.style.color = activeColor;
+  weekButton.style.color = "white";
 }
 function outWeek() {
   if (reportCard.className == "data-daily") {
     weekButton.style.color = normalColor;
   }
   if (reportCard.className == "data-weekly") {
-    weekButton.style.color = activeColor;
+    weekButton.style.color = "white";
   }
   if (reportCard.className == "data-monthly") {
     weekButton.style.color = normalColor;
@@ -110,10 +110,10 @@ function outWeek() {
 function clickMonth() {
   dayButton.style.color = normalColor;
   weekButton.style.color = normalColor;
-  monthButton.style.color = activeColor;
+  monthButton.style.color = "white";
 }
 function onMonth() {
-  monthButton.style.color = activeColor;
+  monthButton.style.color = "white";
 }
 function outMonth() {
   if (reportCard.className == "data-daily") {
@@ -123,6 +123,6 @@ function outMonth() {
     monthButton.style.color = normalColor;
   }
   if (reportCard.className == "data-monthly") {
-    monthButton.style.color = activeColor;
+    monthButton.style.color = "white";
   }
 }
