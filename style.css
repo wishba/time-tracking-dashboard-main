@@ -37,7 +37,7 @@ body {
 
 .report {
   background-color: var(--bg-card);
-  margin: 5rem 1.5rem 0;
+  margin: 5rem 1.5rem 1rem;
 }
 
 .report,
@@ -91,6 +91,10 @@ body {
 
 #showWeekly {
   color: var(--txt-main);
+}
+
+.report__data {
+  margin: 1.5rem;
 }
 
 .report__data>*>* {
