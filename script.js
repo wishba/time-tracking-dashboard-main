@@ -5,15 +5,15 @@ fetch("data.json")
 function appendData(object) {
 
   for (const iterator of object) {
-    let cardContainer = document.getElementById("card__container");
+    let cardContainer = document.getElementById("report__card");
     let div = document.createElement("div");
 
     console.log(iterator);
 
     div.innerHTML = `
       <p>${iterator.title}</p>
-      <p>${iterator.timeframes.daily.current}hrs</p>
-      <p>Yesterday - ${iterator.timeframes.daily.previous}hrs</p>
+      <p>${iterator.timeframes.weekly.current}hrs</p>
+      <p>Yesterday - ${iterator.timeframes.weekly.previous}hrs</p>
     `;
 
     document.getElementById("showDaily").addEventListener("click", daily);
