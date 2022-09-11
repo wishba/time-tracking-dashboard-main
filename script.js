@@ -11,7 +11,7 @@ fetch("data.json")
 
 function appendData(object) {
   for (const iterator of object) {
-    let cardContainer = document.getElementById("report__card");
+    // let cardContainer = document.getElementById("report__card");
     let div = document.createElement("div");
 
     div.innerHTML = `
@@ -55,6 +55,6 @@ function appendData(object) {
       `;
     }
 
-    cardContainer.appendChild(div);
+    document.getElementById("report__card").appendChild(div);
   }
 }
