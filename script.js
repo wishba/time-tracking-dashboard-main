@@ -13,14 +13,15 @@ let reportCard = document.getElementById("report__card");
 
 function appendData(object) {
   for (const iterator of object) {
-    let button = document.createElement("button");
+    // let button = document.createElement("button");
     let div = document.createElement("div");
     let reportCard = document.getElementById("report__card");
     div.className = `${iterator.title}`;
 
     reportCard.className = "data-weekly";
-    button.innerHTML = `<img src="images/icon-ellipsis.svg" alt="more" />`;
+    // button.innerHTML = `<img src="images/icon-ellipsis.svg" alt="more" />`;
     div.innerHTML = `
+      <button><img src="images/icon-ellipsis.svg" alt="more" /></button>
       <div>
         <p>${iterator.title}</p>
         <p class="hrs__current">${iterator.timeframes.weekly.current}hrs</p>
@@ -32,6 +33,7 @@ function appendData(object) {
     function daily() {
       reportCard.className = "data-daily";
       div.innerHTML = `
+        <button><img src="images/icon-ellipsis.svg" alt="more" /></button>
         <div>
           <p>${iterator.title}</p>
           <p class="hrs__current">${iterator.timeframes.daily.current}hrs</p>
@@ -44,6 +46,7 @@ function appendData(object) {
     function weekly() {
       reportCard.className = "data-weekly";
       div.innerHTML = `
+        <button><img src="images/icon-ellipsis.svg" alt="more" /></button>
         <div>
           <p>${iterator.title}</p>
           <p class="hrs__current">${iterator.timeframes.weekly.current}hrs</p>
@@ -56,6 +59,7 @@ function appendData(object) {
     function monthly() {
       reportCard.className = "data-monthly";
       div.innerHTML = `
+        <button><img src="images/icon-ellipsis.svg" alt="more" /></button>
         <div>
           <p>${iterator.title}</p>
           <p class="hrs__current">${iterator.timeframes.monthly.current}hrs</p>
@@ -64,7 +68,7 @@ function appendData(object) {
       `;
     }
 
-    document.getElementById("report__card").appendChild(button);
+    // document.getElementById("report__card").appendChild(button);
     document.getElementById("report__card").appendChild(div);
   }
 }

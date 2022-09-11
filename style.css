@@ -108,17 +108,21 @@ div {
   margin: 1.5rem;
 }
 
-.report__data>* {
+.report__data>*>* {
   position: relative;
 }
 
-.report__data>*>button {
+.report__data>*>*>button {
   /* background-color: red; */
   position: absolute;
   /* position: fixed; */
   /* text-align: right; */
-  right: 0;
-  top: 4.5rem;
+  right: 1.5rem;
+  top: 5.5rem;
+  /* transform: translateX(550%); */
+  /* transform: translate(550% 500%); */
+  /* transform: translateY(50%); */
+  /* text-align: right; */
   z-index: 1;
   /* background-color: none; */
   border: none;
@@ -128,9 +132,9 @@ div {
   background-color: transparent;
 }
 
-.report__data>*>button>img {
+.report__data>*>*>button>img {
   /* opacity: 0.95; */
-  background-color: transparent;
+  /* background-color: transparent; */
   /* width: 5rem; */
 }
 
