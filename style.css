@@ -152,6 +152,14 @@ div {
 
 .hrsCurrent {
   font-size: 1.5rem;
+  float: left;
+  margin: 0;
+}
+
+.hrsPrevious {
+  text-align: right;
+  margin-top: 1.25rem;
+  color: var(--txt-main);
 }
 
 .attribution {
