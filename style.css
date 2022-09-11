@@ -93,9 +93,26 @@ body {
   color: var(--txt-main);
 }
 
-.data>* {
+/* .data>* {
   background-color: var(--bg-card);
   border-radius: .8rem;
+} */
+
+div .Work {
+  /* background-color: red; */
+}
+
+.Work {
+  background-color: blue;
+  /* width: fit-content; */
+  /* margin-top: 1rem; */
+  padding-top: 1rem;
+}
+
+.Work>* {
+  background-color: red;
+  width: fit-content;
+  /* margin-top: 1rem; */
 }
 
 .attribution {

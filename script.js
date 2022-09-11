@@ -14,44 +14,51 @@ let reportCard = document.getElementById("report__card");
 function appendData(object) {
   for (const iterator of object) {
     let div = document.createElement("div");
-    document.getElementById("report__card").className = "data-weekly";
+    let reportCard = document.getElementById("report__card");
+    div.className = `${iterator.title}`;
 
+    reportCard.className = "data-weekly";
     div.innerHTML = `
-      <p>${iterator.title}</p>
-      <p>${iterator.timeframes.weekly.current}hrs</p>
-      <p>Last Week - ${iterator.timeframes.weekly.previous}hrs</p>
+      <div>
+        <p>${iterator.title}</p>
+        <p>${iterator.timeframes.weekly.current}hrs</p>
+        <p>Last Week - ${iterator.timeframes.weekly.previous}hrs</p>
+      </div>
     `;
 
     document.getElementById("showDaily").addEventListener("click", daily);
     function daily() {
-      document.getElementById("report__card").className = "data-daily";
-
+      reportCard.className = "data-daily";
       div.innerHTML = `
-      <p>${iterator.title}</p>
-      <p>${iterator.timeframes.daily.current}hrs</p>
-      <p>Yesterday - ${iterator.timeframes.daily.previous}hrs</p>
+        <div>
+          <p>${iterator.title}</p>
+          <p>${iterator.timeframes.daily.current}hrs</p>
+          <p>Yesterday - ${iterator.timeframes.daily.previous}hrs</p>
+        </div>
       `;
     }
 
     document.getElementById("showWeekly").addEventListener("click", weekly);
     function weekly() {
-      document.getElementById("report__card").className = "data-weekly";
-
+      reportCard.className = "data-weekly";
       div.innerHTML = `
-        <p>${iterator.title}</p>
-        <p>${iterator.timeframes.weekly.current}hrs</p>
-        <p>Last Week - ${iterator.timeframes.weekly.previous}hrs</p>
+        <div>
+          <p>${iterator.title}</p>
+          <p>${iterator.timeframes.weekly.current}hrs</p>
+          <p>Last Week - ${iterator.timeframes.weekly.previous}hrs</p>
+        </div>
       `;
     }
 
     document.getElementById("showMonthly").addEventListener("click", monthly);
     function monthly() {
-      document.getElementById("report__card").className = "data-monthly";
-
+      reportCard.className = "data-monthly";
       div.innerHTML = `
-        <p>${iterator.title}</p>
-        <p>${iterator.timeframes.monthly.current}hrs</p>
-        <p>Last Month - ${iterator.timeframes.monthly.previous}hrs</p>
+        <div>
+          <p>${iterator.title}</p>
+          <p>${iterator.timeframes.monthly.current}hrs</p>
+          <p>Last Month - ${iterator.timeframes.monthly.previous}hrs</p>
+        </div>
       `;
     }
 
