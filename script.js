@@ -13,11 +13,8 @@ let reportCard = document.getElementById("report__card");
 
 function appendData(object) {
   for (const iterator of object) {
-    // let cardContainer = document.getElementById("report__card");
     let div = document.createElement("div");
-
     document.getElementById("report__card").className = "data-weekly";
-
 
     div.innerHTML = `
       <p>${iterator.title}</p>
@@ -34,12 +31,6 @@ function appendData(object) {
       <p>${iterator.timeframes.daily.current}hrs</p>
       <p>Yesterday - ${iterator.timeframes.daily.previous}hrs</p>
       `;
-
-      // console.log(document.getElementsByClassName("data-daily"));
-      // console.log(document.getElementById("report__card").className == "data-daily");
-      // if (document.getElementById("report__card").className == "data-daily") {
-      //   console.log("benar");
-      // }
     }
 
     document.getElementById("showWeekly").addEventListener("click", weekly);
