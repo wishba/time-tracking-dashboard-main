@@ -20,9 +20,10 @@ function appendData(object) {
     reportCard.className = "data-weekly";
     div.innerHTML = `
       <div>
+        <button><img src="images/icon-ellipsis.svg" alt="more" /></button>
         <p>${iterator.title}</p>
-        <p class="hrsCurrent">${iterator.timeframes.weekly.current}hrs</p>
-        <p class="hrsPrevious">Last Week - ${iterator.timeframes.weekly.previous}hrs</p>
+        <p class="hrs__current">${iterator.timeframes.weekly.current}hrs</p>
+        <p class="hrs__previous">Last Week - ${iterator.timeframes.weekly.previous}hrs</p>
       </div>
     `;
 
@@ -31,9 +32,10 @@ function appendData(object) {
       reportCard.className = "data-daily";
       div.innerHTML = `
         <div>
+          <button><img src="images/icon-ellipsis.svg" alt="more" /></button>
           <p>${iterator.title}</p>
-          <p class="hrsCurrent">${iterator.timeframes.daily.current}hrs</p>
-          <p class="hrsPrevious">Yesterday - ${iterator.timeframes.daily.previous}hrs</p>
+          <p class="hrs__current">${iterator.timeframes.daily.current}hrs</p>
+          <p class="hrs__previous">Yesterday - ${iterator.timeframes.daily.previous}hrs</p>
         </div>
       `;
     }
@@ -43,9 +45,10 @@ function appendData(object) {
       reportCard.className = "data-weekly";
       div.innerHTML = `
         <div>
+          <button><img src="images/icon-ellipsis.svg" alt="more" /></button>
           <p>${iterator.title}</p>
-          <p class="hrsCurrent">${iterator.timeframes.weekly.current}hrs</p>
-          <p class="hrsPrevious">Last Week - ${iterator.timeframes.weekly.previous}hrs</p>
+          <p class="hrs__current">${iterator.timeframes.weekly.current}hrs</p>
+          <p class="hrs__previous">Last Week - ${iterator.timeframes.weekly.previous}hrs</p>
         </div>
       `;
     }
@@ -55,9 +58,10 @@ function appendData(object) {
       reportCard.className = "data-monthly";
       div.innerHTML = `
         <div>
+          <button><img src="images/icon-ellipsis.svg" alt="more" /></button>
           <p>${iterator.title}</p>
-          <p class="hrsCurrent">${iterator.timeframes.monthly.current}hrs</p>
-          <p class="hrsPrevious">Last Month - ${iterator.timeframes.monthly.previous}hrs</p>
+          <p class="hrs__current">${iterator.timeframes.monthly.current}hrs</p>
+          <p class="hrs__previous">Last Month - ${iterator.timeframes.monthly.previous}hrs</p>
         </div>
       `;
     }

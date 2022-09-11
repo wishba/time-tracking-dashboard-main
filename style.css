@@ -120,6 +120,13 @@ div {
   padding: 1.5rem;
 }
 
+.report__data>*>*>*>button {
+  background: none;
+  border: none;
+  float: right;
+  margin-top: 1rem;
+}
+
 .Work {
   background-image: url(images/icon-work.svg);
   background-color: var(--bg-work);
@@ -150,13 +157,13 @@ div {
   background-color: var(--bg-care);
 }
 
-.hrsCurrent {
+.hrs__current {
   font-size: 1.5rem;
   float: left;
   margin: 0;
 }
 
-.hrsPrevious {
+.hrs__previous {
   text-align: right;
   margin-top: 1.25rem;
   color: var(--txt-main);
