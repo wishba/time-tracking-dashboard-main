@@ -89,10 +89,6 @@ body {
   padding: 1.5rem;
 }
 
-.report__time-week {
-  color: var(--txt-main);
-}
-
 .data>* {
   background-color: var(--bg-card);
   border-radius: .8rem;
