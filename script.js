@@ -9,6 +9,18 @@ let dayButton = document.getElementById("showDaily");
 let weekButton = document.getElementById("showWeekly");
 let monthButton = document.getElementById("showMonthly");
 
+function dayHover() {
+  dayButton.style.color = activeColor;
+}
+
+function weekHover() {
+  weekButton.style.color = activeColor;
+}
+
+function monthHover() {
+  monthButton.style.color = activeColor;
+}
+
 function appendData(object) {
 
   for (const iterator of object) {

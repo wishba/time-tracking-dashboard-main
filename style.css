@@ -89,10 +89,6 @@ body {
   padding: 1.5rem;
 }
 
-/* .report__time>*:hover {
-  color: var(--txt-main);
-} */
-
 .report__time-week {
   color: var(--txt-main);
 }
