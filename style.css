@@ -127,7 +127,7 @@ div {
 .report__data>*>*>div {
   background-color: var(--bg-card);
   padding: 1.5rem;
-  height: 10em;
+  height: 8rem;
 }
 
 .report__data>*>*>*:hover,
