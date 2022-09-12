@@ -130,6 +130,7 @@ div {
   margin: 0;
   /* width: 5rem; */
   background-color: transparent;
+  height: fit-content;
 }
 
 .report__data>*>*>button>img {
@@ -152,6 +153,7 @@ div {
 .report__data>*>*>* {
   background-color: var(--bg-card);
   padding: 1.5rem;
+  height: 10em;
 }
 
 /* .report__data>*>*>*:hover { */
@@ -220,4 +222,30 @@ div {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width:600px) {
+  .report {
+    float: left;
+    margin: 0;
+  }
+
+  .report__data {
+    /* float: right; */
+    margin: 0;
+  }
+
+  .report__data>* {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .report__data>*>* {
+    /* width: 20rem; */
+  }
+
+  footer {
+    /* position: absolute; */
+    /* bottom: 0; */
+  }
 }
