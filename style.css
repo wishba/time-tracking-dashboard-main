@@ -191,6 +191,7 @@ div {
   .report {
     width: 15rem;
     height: 30rem;
+    float: left;
   }
 
   .report__head {
@@ -221,6 +222,10 @@ div {
   .report__time>* {
     display: block;
     padding: .5rem;
+  }
+
+  .report__data>* {
+    display: flex;
   }
 
   .report__data>*>* {
