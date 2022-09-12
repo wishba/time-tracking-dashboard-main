@@ -221,6 +221,10 @@ div {
 }
 
 @media screen and (min-width:600px) {
+  .report {
+    width: 15rem;
+  }
+
   .report__head {
     display: block;
   }
