@@ -223,19 +223,23 @@ div {
 @media screen and (min-width:600px) {
   .report {
     width: 15rem;
+    height: 30rem;
   }
 
   .report__head {
     display: block;
+    height: 20rem;
+  }
+
+  .report__img {
+    width: 5.5rem;
+    height: 5.5rem;
   }
 
   .report__desc {
     position: static;
     transform: translateY(0);
-  }
-
-  .report__for {
-    margin-top: 1.5rem;
+    margin-top: 3rem;
   }
 
   .report__name {
