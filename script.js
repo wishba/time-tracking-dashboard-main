@@ -13,13 +13,11 @@ let reportCard = document.getElementById("report__card");
 
 function appendData(object) {
   for (const iterator of object) {
-    // let button = document.createElement("button");
     let div = document.createElement("div");
     let reportCard = document.getElementById("report__card");
     div.className = `${iterator.title}`;
 
     reportCard.className = "data-weekly";
-    // button.innerHTML = `<img src="images/icon-ellipsis.svg" alt="more" />`;
     div.innerHTML = `
       <button><img src="images/icon-ellipsis.svg" alt="more" /></button>
       <div>
@@ -68,7 +66,6 @@ function appendData(object) {
       `;
     }
 
-    // document.getElementById("report__card").appendChild(button);
     document.getElementById("report__card").appendChild(div);
   }
 }

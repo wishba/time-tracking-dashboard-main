@@ -190,27 +190,9 @@ div {
 
 @media screen and (min-width:800px) {
   main {
-    background-color: red;
     margin: auto;
     max-width: 65.5rem;
-    /* transform: translateY(25vh); */
-    /* main { */
-    /* background-color: red; */
-    /* margin: auto; */
-
-    /* position: absolute; */
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
-    /* transform: translateY(-50%); */
-    /* transform: translate(-50%, -50%); */
-
-
-    /* max-width: 65.5rem; */
-    /* max-height: 100%; */
-    /* height: 50rem; */
-    /* max-height: 50rem; */
-    /* } */
+    margin-top: 13rem;
   }
 
   .report {
@@ -267,5 +249,13 @@ div {
 
   .report__data>*>*>div {
     height: 12rem;
+  }
+}
+
+@media screen and (max-width:1050px) {
+  main {
+    margin: auto;
+    max-width: 49rem;
+    margin-top: 4rem;
   }
 }
