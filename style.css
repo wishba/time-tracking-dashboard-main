@@ -110,6 +110,7 @@ div {
   background-position: top -.3rem right 1rem;
   background-size: 4rem;
   margin-bottom: 1.5rem;
+  border-radius: 1rem;
 }
 
 .report__data>*>*>button {
@@ -194,9 +195,9 @@ div {
 
   .report {
     width: 15rem;
-    height: 30rem;
+    height: 31.5rem;
     float: left;
-    margin: 0;
+    margin: .75rem .5rem;
   }
 
   .report__head {
@@ -239,7 +240,7 @@ div {
   }
 
   .report__data>*>* {
-    margin: 0;
+    margin: .75rem;
     height: 15rem;
     width: 15rem;
   }
