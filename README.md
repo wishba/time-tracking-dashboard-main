@@ -24,9 +24,8 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="screenshot-s.png" height="350px">
-<img src="screenshot-m.png" height="350px">
-<img src="screenshot-l.png" width="500px">
+<img src="screenshot-s.png" width="20%">  <img src="screenshot-m.png" width="50%">
+<img src="screenshot-l.png" width="100%">
 
 ### Links
 
